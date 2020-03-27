@@ -42,7 +42,7 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<?\n    let avatarPath;\n    if (user.Profile.Avatar.url.small.startsWith('https://')) {\n        avatarPath = user.Profile.Avatar.url.small;\n    } else {\n        avatarPath = settings['user.settings.trustedDomain'] + '/' + user.Profile.Avatar.url.small;\n    }\n?>\n<li id=\"<?= user.User.id ?>\">\n    <div class=\"row\">\n        <div class=\"main-cell-wrapper\">\n            <div class=\"main-cell\">\n                <a>\n                    <div class=\"avatar\">\n                        <img src=\"<?= avatarPath ?>\"/>\n                    </div>\n                    <div class=\"user\">\n                        <span class=\"name\"><?= user.Profile.first_name ?> <?= user.Profile.last_name ?> (<?= user.Gpgkey.key_id ?>)</span>\n                        <span class=\"details\" title=\"<?= user.User.username ?>\"><?= user.User.username ?></span>\n                    </div>\n                </a>\n            </div>\n        </div>\n    </div>\n</li>\n"
+  , __lines = "<?\r\n    let avatarPath;\r\n    if (user.Profile.Avatar.url.small.startsWith('https://')) {\r\n        avatarPath = user.Profile.Avatar.url.small;\r\n    } else {\r\n        avatarPath = settings['user.settings.trustedDomain'] + '/' + user.Profile.Avatar.url.small;\r\n    }\r\n?>\r\n<li id=\"<?= user.User.id ?>\">\r\n    <div class=\"row\">\r\n        <div class=\"main-cell-wrapper\">\r\n            <div class=\"main-cell\">\r\n                <a>\r\n                    <div class=\"avatar\">\r\n                        <img src=\"<?= avatarPath ?>\"/>\r\n                    </div>\r\n                    <div class=\"user\">\r\n                        <span class=\"name\"><?= user.Profile.first_name ?> <?= user.Profile.last_name ?> (<?= user.Gpgkey.key_id ?>)</span>\r\n                        <span class=\"details\" title=\"<?= user.User.username ?>\"><?= user.User.username ?></span>\r\n                    </div>\r\n                </a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</li>\r\n"
   , __filename = "src/all/data/ejs/group/editAutocompleteItem.ejs";
 try {
   var __output = "";
@@ -57,25 +57,25 @@ try {
     }
 
     ; __line = 8
-    ; __append("\n<li id=\"")
+    ; __append("\r\n<li id=\"")
     ; __line = 9
     ; __append(escapeFn( user.User.id ))
-    ; __append("\">\n    <div class=\"row\">\n        <div class=\"main-cell-wrapper\">\n            <div class=\"main-cell\">\n                <a>\n                    <div class=\"avatar\">\n                        <img src=\"")
+    ; __append("\">\r\n    <div class=\"row\">\r\n        <div class=\"main-cell-wrapper\">\r\n            <div class=\"main-cell\">\r\n                <a>\r\n                    <div class=\"avatar\">\r\n                        <img src=\"")
     ; __line = 15
     ; __append(escapeFn( avatarPath ))
-    ; __append("\"/>\n                    </div>\n                    <div class=\"user\">\n                        <span class=\"name\">")
+    ; __append("\"/>\r\n                    </div>\r\n                    <div class=\"user\">\r\n                        <span class=\"name\">")
     ; __line = 18
     ; __append(escapeFn( user.Profile.first_name ))
     ; __append(" ")
     ; __append(escapeFn( user.Profile.last_name ))
     ; __append(" (")
     ; __append(escapeFn( user.Gpgkey.key_id ))
-    ; __append(")</span>\n                        <span class=\"details\" title=\"")
+    ; __append(")</span>\r\n                        <span class=\"details\" title=\"")
     ; __line = 19
     ; __append(escapeFn( user.User.username ))
     ; __append("\">")
     ; __append(escapeFn( user.User.username ))
-    ; __append("</span>\n                    </div>\n                </a>\n            </div>\n        </div>\n    </div>\n</li>\n")
+    ; __append("</span>\r\n                    </div>\r\n                </a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</li>\r\n")
     ; __line = 26
   }
   return __output;

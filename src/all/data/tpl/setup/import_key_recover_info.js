@@ -42,13 +42,13 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<h3>What is this private key?</h3>\n<p>\n    The key you need here is the key that was generated (or that you imported) during your first setup.\n    Remember, during the initial setup, there was a step where you were asked to make a backup.\n    You need this file now.\n</p>\n<h3>What if I don't have it?</h3>\n<p>\n    If you don't have a backup of your key, you will not be able to recover your account.\n<p>"
+  , __lines = "<h3>What is this private key?</h3>\r\n<p>\r\n    The key you need here is the key that was generated (or that you imported) during your first setup.\r\n    Remember, during the initial setup, there was a step where you were asked to make a backup.\r\n    You need this file now.\r\n</p>\r\n<h3>What if I don't have it?</h3>\r\n<p>\r\n    If you don't have a backup of your key, you will not be able to recover your account.\r\n<p>"
   , __filename = "src/all/data/ejs/setup/import_key_recover_info.ejs";
 try {
   var __output = "";
   function __append(s) { if (s !== undefined && s !== null) __output += s }
   with (locals || {}) {
-    ; __append("<h3>What is this private key?</h3>\n<p>\n    The key you need here is the key that was generated (or that you imported) during your first setup.\n    Remember, during the initial setup, there was a step where you were asked to make a backup.\n    You need this file now.\n</p>\n<h3>What if I don't have it?</h3>\n<p>\n    If you don't have a backup of your key, you will not be able to recover your account.\n<p>")
+    ; __append("<h3>What is this private key?</h3>\r\n<p>\r\n    The key you need here is the key that was generated (or that you imported) during your first setup.\r\n    Remember, during the initial setup, there was a step where you were asked to make a backup.\r\n    You need this file now.\r\n</p>\r\n<h3>What if I don't have it?</h3>\r\n<p>\r\n    If you don't have a backup of your key, you will not be able to recover your account.\r\n<p>")
     ; __line = 10
   }
   return __output;

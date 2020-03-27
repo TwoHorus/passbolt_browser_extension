@@ -42,7 +42,7 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<?\nvar success = true;\nif(this.errorsList.length > 0) {\n    success = false;\n}\n?>\n<div class=\"dialog-wrapper\">\n    <div class=\"dialog report\">\n        <div class=\"dialog-header\">\n            <? if (success) { ?>\n            <h2>Success!</h2>\n            <? } else { ?>\n            <h2>Something went wrong!</h2>\n            <? } ?>\n            <a class=\"dialog-close\" role=\"button\">\n                <i class=\"fa fa-close\"></i><span class=\"visuallyhidden\">close</span>\n            </a>\n\n        </div>\n        <div class=\"js_dialog_content dialog-content\">\n\n            <form class=\"tab-content ready selected\" id=\"js_rs_import_report\">\n                <div class=\"form-content\">\n                    <? if (success) { ?>\n                    <p><strong><?= this.successList.length ?> passwords have been imported successfully.</strong></p>\n                    <? } else { ?>\n                    <p class=\"error inline-error\">There was an issue when importing the passwords:</p>\n                    <? } ?>\n                    <? if (!success) { ?>\n                    <p>\n                        <strong><?= this.successList.length ?> out of <?= this.resources.length ?></strong> passwords have been imported.\n                    </p>\n                    <? } ?>\n                    <? if(this.tagsIntegration === true) { ?>\n                    <p>You can find the newly imported passwords under the tag: '<?= this.importTag ?>'.</p>\n                    <? } ?>\n                    <? if (!success) { ?>\n                    <div class=\"accordion error-details closed\">\n                        <div class=\"accordion-header\">\n                            <a role=\"link\">Errors details</a>\n                        </div>\n                        <div class=\"accordion-content hidden\" style=\"display: none;\">\n                            <div class=\"input text\">\n                                <label for=\"js_field_debug\" class=\"visuallyhidden\">Errors details</label>\n                                <textarea id=\"js_field_debug\"><?= JSON.stringify(this.errorsList, null, 4); ?></textarea>\n                            </div>\n                        </div>\n                    </div>\n                    <? } ?>\n                </div>\n                <div class=\"submit-wrapper clearfix\">\n                    <input class=\"button primary\" value=\"Ok\" type=\"submit\">\n                </div>\n            </form>\n        </div>\n    </div>\n</div>"
+  , __lines = "<?\r\nvar success = true;\r\nif(this.errorsList.length > 0) {\r\n    success = false;\r\n}\r\n?>\r\n<div class=\"dialog-wrapper\">\r\n    <div class=\"dialog report\">\r\n        <div class=\"dialog-header\">\r\n            <? if (success) { ?>\r\n            <h2>Success!</h2>\r\n            <? } else { ?>\r\n            <h2>Something went wrong!</h2>\r\n            <? } ?>\r\n            <a class=\"dialog-close\" role=\"button\">\r\n                <i class=\"fa fa-close\"></i><span class=\"visuallyhidden\">close</span>\r\n            </a>\r\n\r\n        </div>\r\n        <div class=\"js_dialog_content dialog-content\">\r\n\r\n            <form class=\"tab-content ready selected\" id=\"js_rs_import_report\">\r\n                <div class=\"form-content\">\r\n                    <? if (success) { ?>\r\n                    <p><strong><?= this.successList.length ?> passwords have been imported successfully.</strong></p>\r\n                    <? } else { ?>\r\n                    <p class=\"error inline-error\">There was an issue when importing the passwords:</p>\r\n                    <? } ?>\r\n                    <? if (!success) { ?>\r\n                    <p>\r\n                        <strong><?= this.successList.length ?> out of <?= this.resources.length ?></strong> passwords have been imported.\r\n                    </p>\r\n                    <? } ?>\r\n                    <? if(this.tagsIntegration === true) { ?>\r\n                    <p>You can find the newly imported passwords under the tag: '<?= this.importTag ?>'.</p>\r\n                    <? } ?>\r\n                    <? if (!success) { ?>\r\n                    <div class=\"accordion error-details closed\">\r\n                        <div class=\"accordion-header\">\r\n                            <a role=\"link\">Errors details</a>\r\n                        </div>\r\n                        <div class=\"accordion-content hidden\" style=\"display: none;\">\r\n                            <div class=\"input text\">\r\n                                <label for=\"js_field_debug\" class=\"visuallyhidden\">Errors details</label>\r\n                                <textarea id=\"js_field_debug\"><?= JSON.stringify(this.errorsList, null, 4); ?></textarea>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <? } ?>\r\n                </div>\r\n                <div class=\"submit-wrapper clearfix\">\r\n                    <input class=\"button primary\" value=\"Ok\" type=\"submit\">\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>"
   , __filename = "src/all/data/ejs/import/importPasswordsReportDialog.ejs";
 try {
   var __output = "";
@@ -55,57 +55,57 @@ if(this.errorsList.length > 0) {
 }
 
     ; __line = 6
-    ; __append("\n<div class=\"dialog-wrapper\">\n    <div class=\"dialog report\">\n        <div class=\"dialog-header\">\n            ")
+    ; __append("\r\n<div class=\"dialog-wrapper\">\r\n    <div class=\"dialog report\">\r\n        <div class=\"dialog-header\">\r\n            ")
     ; __line = 10
     ;  if (success) { 
-    ; __append("\n            <h2>Success!</h2>\n            ")
+    ; __append("\r\n            <h2>Success!</h2>\r\n            ")
     ; __line = 12
     ;  } else { 
-    ; __append("\n            <h2>Something went wrong!</h2>\n            ")
+    ; __append("\r\n            <h2>Something went wrong!</h2>\r\n            ")
     ; __line = 14
     ;  } 
-    ; __append("\n            <a class=\"dialog-close\" role=\"button\">\n                <i class=\"fa fa-close\"></i><span class=\"visuallyhidden\">close</span>\n            </a>\n\n        </div>\n        <div class=\"js_dialog_content dialog-content\">\n\n            <form class=\"tab-content ready selected\" id=\"js_rs_import_report\">\n                <div class=\"form-content\">\n                    ")
+    ; __append("\r\n            <a class=\"dialog-close\" role=\"button\">\r\n                <i class=\"fa fa-close\"></i><span class=\"visuallyhidden\">close</span>\r\n            </a>\r\n\r\n        </div>\r\n        <div class=\"js_dialog_content dialog-content\">\r\n\r\n            <form class=\"tab-content ready selected\" id=\"js_rs_import_report\">\r\n                <div class=\"form-content\">\r\n                    ")
     ; __line = 24
     ;  if (success) { 
-    ; __append("\n                    <p><strong>")
+    ; __append("\r\n                    <p><strong>")
     ; __line = 25
     ; __append(escapeFn( this.successList.length ))
-    ; __append(" passwords have been imported successfully.</strong></p>\n                    ")
+    ; __append(" passwords have been imported successfully.</strong></p>\r\n                    ")
     ; __line = 26
     ;  } else { 
-    ; __append("\n                    <p class=\"error inline-error\">There was an issue when importing the passwords:</p>\n                    ")
+    ; __append("\r\n                    <p class=\"error inline-error\">There was an issue when importing the passwords:</p>\r\n                    ")
     ; __line = 28
     ;  } 
-    ; __append("\n                    ")
+    ; __append("\r\n                    ")
     ; __line = 29
     ;  if (!success) { 
-    ; __append("\n                    <p>\n                        <strong>")
+    ; __append("\r\n                    <p>\r\n                        <strong>")
     ; __line = 31
     ; __append(escapeFn( this.successList.length ))
     ; __append(" out of ")
     ; __append(escapeFn( this.resources.length ))
-    ; __append("</strong> passwords have been imported.\n                    </p>\n                    ")
+    ; __append("</strong> passwords have been imported.\r\n                    </p>\r\n                    ")
     ; __line = 33
     ;  } 
-    ; __append("\n                    ")
+    ; __append("\r\n                    ")
     ; __line = 34
     ;  if(this.tagsIntegration === true) { 
-    ; __append("\n                    <p>You can find the newly imported passwords under the tag: '")
+    ; __append("\r\n                    <p>You can find the newly imported passwords under the tag: '")
     ; __line = 35
     ; __append(escapeFn( this.importTag ))
-    ; __append("'.</p>\n                    ")
+    ; __append("'.</p>\r\n                    ")
     ; __line = 36
     ;  } 
-    ; __append("\n                    ")
+    ; __append("\r\n                    ")
     ; __line = 37
     ;  if (!success) { 
-    ; __append("\n                    <div class=\"accordion error-details closed\">\n                        <div class=\"accordion-header\">\n                            <a role=\"link\">Errors details</a>\n                        </div>\n                        <div class=\"accordion-content hidden\" style=\"display: none;\">\n                            <div class=\"input text\">\n                                <label for=\"js_field_debug\" class=\"visuallyhidden\">Errors details</label>\n                                <textarea id=\"js_field_debug\">")
+    ; __append("\r\n                    <div class=\"accordion error-details closed\">\r\n                        <div class=\"accordion-header\">\r\n                            <a role=\"link\">Errors details</a>\r\n                        </div>\r\n                        <div class=\"accordion-content hidden\" style=\"display: none;\">\r\n                            <div class=\"input text\">\r\n                                <label for=\"js_field_debug\" class=\"visuallyhidden\">Errors details</label>\r\n                                <textarea id=\"js_field_debug\">")
     ; __line = 45
     ; __append(escapeFn( JSON.stringify(this.errorsList, null, 4) ))
-    ; __append("</textarea>\n                            </div>\n                        </div>\n                    </div>\n                    ")
+    ; __append("</textarea>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    ")
     ; __line = 49
     ;  } 
-    ; __append("\n                </div>\n                <div class=\"submit-wrapper clearfix\">\n                    <input class=\"button primary\" value=\"Ok\" type=\"submit\">\n                </div>\n            </form>\n        </div>\n    </div>\n</div>")
+    ; __append("\r\n                </div>\r\n                <div class=\"submit-wrapper clearfix\">\r\n                    <input class=\"button primary\" value=\"Ok\" type=\"submit\">\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>")
     ; __line = 57
   }
   return __output;

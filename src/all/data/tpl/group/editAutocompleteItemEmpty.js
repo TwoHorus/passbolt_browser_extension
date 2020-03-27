@@ -42,13 +42,13 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<li>\n    <div class=\"row\">\n        <div class=\"main-cell-wrapper\">\n            <div class=\"main-cell\" style=\"font-size:16px;\">\n                No user found\n            </div>\n        </div>\n    </div>\n</li>\n"
+  , __lines = "<li>\r\n    <div class=\"row\">\r\n        <div class=\"main-cell-wrapper\">\r\n            <div class=\"main-cell\" style=\"font-size:16px;\">\r\n                No user found\r\n            </div>\r\n        </div>\r\n    </div>\r\n</li>\r\n"
   , __filename = "src/all/data/ejs/group/editAutocompleteItemEmpty.ejs";
 try {
   var __output = "";
   function __append(s) { if (s !== undefined && s !== null) __output += s }
   with (locals || {}) {
-    ; __append("<li>\n    <div class=\"row\">\n        <div class=\"main-cell-wrapper\">\n            <div class=\"main-cell\" style=\"font-size:16px;\">\n                No user found\n            </div>\n        </div>\n    </div>\n</li>\n")
+    ; __append("<li>\r\n    <div class=\"row\">\r\n        <div class=\"main-cell-wrapper\">\r\n            <div class=\"main-cell\" style=\"font-size:16px;\">\r\n                No user found\r\n            </div>\r\n        </div>\r\n    </div>\r\n</li>\r\n")
     ; __line = 10
   }
   return __output;

@@ -42,16 +42,16 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<div class=\"more_details tooltip-alt\">\n    <i class=\"fa fa-info-circle\"></i>\n    <div class=\"tooltip-text right\">\n        <?= resources.map(resource => resource.name).join(', '); ?>\n    </div>\n</div>\n"
+  , __lines = "<div class=\"more_details tooltip-alt\">\r\n    <i class=\"fa fa-info-circle\"></i>\r\n    <div class=\"tooltip-text right\">\r\n        <?= resources.map(resource => resource.name).join(', '); ?>\r\n    </div>\r\n</div>\r\n"
   , __filename = "src/all/data/ejs/resource/shareBulkTitleTooltip.ejs";
 try {
   var __output = "";
   function __append(s) { if (s !== undefined && s !== null) __output += s }
   with (locals || {}) {
-    ; __append("<div class=\"more_details tooltip-alt\">\n    <i class=\"fa fa-info-circle\"></i>\n    <div class=\"tooltip-text right\">\n        ")
+    ; __append("<div class=\"more_details tooltip-alt\">\r\n    <i class=\"fa fa-info-circle\"></i>\r\n    <div class=\"tooltip-text right\">\r\n        ")
     ; __line = 4
     ; __append(escapeFn( resources.map(resource => resource.name).join(', ') ))
-    ; __append("\n    </div>\n</div>\n")
+    ; __append("\r\n    </div>\r\n</div>\r\n")
     ; __line = 7
   }
   return __output;

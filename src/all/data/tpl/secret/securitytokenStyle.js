@@ -42,34 +42,34 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<style>\n    <?= id ?>:focus,\n    <?= id ?> ~ .security-token {\n        background: <?= color ?>;\n        color: <?= textcolor ?>;\n    }\n    <?= id ?>:focus ~ .security-token {\n        background: <?= textcolor ?>;\n        color: <?= color ?>;\n    };\n</style>"
+  , __lines = "<style>\r\n    <?= id ?>:focus,\r\n    <?= id ?> ~ .security-token {\r\n        background: <?= color ?>;\r\n        color: <?= textcolor ?>;\r\n    }\r\n    <?= id ?>:focus ~ .security-token {\r\n        background: <?= textcolor ?>;\r\n        color: <?= color ?>;\r\n    };\r\n</style>"
   , __filename = "src/all/data/ejs/secret/securitytokenStyle.ejs";
 try {
   var __output = "";
   function __append(s) { if (s !== undefined && s !== null) __output += s }
   with (locals || {}) {
-    ; __append("<style>\n    ")
+    ; __append("<style>\r\n    ")
     ; __line = 2
     ; __append(escapeFn( id ))
-    ; __append(":focus,\n    ")
+    ; __append(":focus,\r\n    ")
     ; __line = 3
     ; __append(escapeFn( id ))
-    ; __append(" ~ .security-token {\n        background: ")
+    ; __append(" ~ .security-token {\r\n        background: ")
     ; __line = 4
     ; __append(escapeFn( color ))
-    ; __append(";\n        color: ")
+    ; __append(";\r\n        color: ")
     ; __line = 5
     ; __append(escapeFn( textcolor ))
-    ; __append(";\n    }\n    ")
+    ; __append(";\r\n    }\r\n    ")
     ; __line = 7
     ; __append(escapeFn( id ))
-    ; __append(":focus ~ .security-token {\n        background: ")
+    ; __append(":focus ~ .security-token {\r\n        background: ")
     ; __line = 8
     ; __append(escapeFn( textcolor ))
-    ; __append(";\n        color: ")
+    ; __append(";\r\n        color: ")
     ; __line = 9
     ; __append(escapeFn( color ))
-    ; __append(";\n    };\n</style>")
+    ; __append(";\r\n    };\r\n</style>")
     ; __line = 11
   }
   return __output;

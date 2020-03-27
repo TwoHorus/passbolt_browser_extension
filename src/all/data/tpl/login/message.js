@@ -42,7 +42,7 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<p class=\"message\"><?= message ?></p>\n"
+  , __lines = "<p class=\"message\"><?= message ?></p>\r\n"
   , __filename = "src/all/data/ejs/login/message.ejs";
 try {
   var __output = "";
@@ -50,7 +50,7 @@ try {
   with (locals || {}) {
     ; __append("<p class=\"message\">")
     ; __append(escapeFn( message ))
-    ; __append("</p>\n")
+    ; __append("</p>\r\n")
     ; __line = 2
   }
   return __output;

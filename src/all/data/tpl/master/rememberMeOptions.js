@@ -42,31 +42,31 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<? if (!options) { ?>\n    <div class=\"input checkbox\">\n        <input type=\"checkbox\" id=\"js_remember_master_password\"/>\n        <label for=\"js_remember_master_password\">Remember it for 5 minutes</label>\n    </div>\n<? } else if (Object.keys(options).length) { ?>\n    <div class=\"input checkbox\">\n        <input type=\"checkbox\" id=\"js_remember_master_password\"/>\n        <label for=\"js_remember_master_password\">Remember it for </label>\n    </div>\n    <div class=\"input select\">\n        <select id=\"js_remember_master_password_duration\">\n        <? for (var time in options) { ?>\n            <option value=\"<?= time.toString() ?>\"><?= options[time].toString() ?></option>\n        <? } ?>\n        </select>\n    </div>\n<? } ?>\n"
+  , __lines = "<? if (!options) { ?>\r\n    <div class=\"input checkbox\">\r\n        <input type=\"checkbox\" id=\"js_remember_master_password\"/>\r\n        <label for=\"js_remember_master_password\">Remember it for 5 minutes</label>\r\n    </div>\r\n<? } else if (Object.keys(options).length) { ?>\r\n    <div class=\"input checkbox\">\r\n        <input type=\"checkbox\" id=\"js_remember_master_password\"/>\r\n        <label for=\"js_remember_master_password\">Remember it for </label>\r\n    </div>\r\n    <div class=\"input select\">\r\n        <select id=\"js_remember_master_password_duration\">\r\n        <? for (var time in options) { ?>\r\n            <option value=\"<?= time.toString() ?>\"><?= options[time].toString() ?></option>\r\n        <? } ?>\r\n        </select>\r\n    </div>\r\n<? } ?>\r\n"
   , __filename = "src/all/data/ejs/master/rememberMeOptions.ejs";
 try {
   var __output = "";
   function __append(s) { if (s !== undefined && s !== null) __output += s }
   with (locals || {}) {
     ;  if (!options) { 
-    ; __append("\n    <div class=\"input checkbox\">\n        <input type=\"checkbox\" id=\"js_remember_master_password\"/>\n        <label for=\"js_remember_master_password\">Remember it for 5 minutes</label>\n    </div>\n")
+    ; __append("\r\n    <div class=\"input checkbox\">\r\n        <input type=\"checkbox\" id=\"js_remember_master_password\"/>\r\n        <label for=\"js_remember_master_password\">Remember it for 5 minutes</label>\r\n    </div>\r\n")
     ; __line = 6
     ;  } else if (Object.keys(options).length) { 
-    ; __append("\n    <div class=\"input checkbox\">\n        <input type=\"checkbox\" id=\"js_remember_master_password\"/>\n        <label for=\"js_remember_master_password\">Remember it for </label>\n    </div>\n    <div class=\"input select\">\n        <select id=\"js_remember_master_password_duration\">\n        ")
+    ; __append("\r\n    <div class=\"input checkbox\">\r\n        <input type=\"checkbox\" id=\"js_remember_master_password\"/>\r\n        <label for=\"js_remember_master_password\">Remember it for </label>\r\n    </div>\r\n    <div class=\"input select\">\r\n        <select id=\"js_remember_master_password_duration\">\r\n        ")
     ; __line = 13
     ;  for (var time in options) { 
-    ; __append("\n            <option value=\"")
+    ; __append("\r\n            <option value=\"")
     ; __line = 14
     ; __append(escapeFn( time.toString() ))
     ; __append("\">")
     ; __append(escapeFn( options[time].toString() ))
-    ; __append("</option>\n        ")
+    ; __append("</option>\r\n        ")
     ; __line = 15
     ;  } 
-    ; __append("\n        </select>\n    </div>\n")
+    ; __append("\r\n        </select>\r\n    </div>\r\n")
     ; __line = 18
     ;  } 
-    ; __append("\n")
+    ; __append("\r\n")
     ; __line = 19
   }
   return __output;

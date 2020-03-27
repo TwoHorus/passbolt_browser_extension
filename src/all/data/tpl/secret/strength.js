@@ -42,7 +42,7 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<span class=\"progress\"><span class=\"progress-bar <?= strengthId ?>\"></span></span>\n<span class=\"complexity-text\">complexity: <strong><?= strengthLabel ?></strong></span>\n"
+  , __lines = "<span class=\"progress\"><span class=\"progress-bar <?= strengthId ?>\"></span></span>\r\n<span class=\"complexity-text\">complexity: <strong><?= strengthLabel ?></strong></span>\r\n"
   , __filename = "src/all/data/ejs/secret/strength.ejs";
 try {
   var __output = "";
@@ -50,10 +50,10 @@ try {
   with (locals || {}) {
     ; __append("<span class=\"progress\"><span class=\"progress-bar ")
     ; __append(escapeFn( strengthId ))
-    ; __append("\"></span></span>\n<span class=\"complexity-text\">complexity: <strong>")
+    ; __append("\"></span></span>\r\n<span class=\"complexity-text\">complexity: <strong>")
     ; __line = 2
     ; __append(escapeFn( strengthLabel ))
-    ; __append("</strong></span>\n")
+    ; __append("</strong></span>\r\n")
     ; __line = 3
   }
   return __output;

@@ -42,16 +42,16 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<ul>\n<? for (var i in menuSteps) { ?>\n    <?\n      var menuClass = 'disabled';\n      switch (menuSteps[i].state) {\n        case 'past':\n          menuClass = 'past';\n          break;\n        case 'current':\n          menuClass = 'selected';\n          break;\n      }\n    ?>\n    <li class=\"<?= menuClass ?>\">\n        <? if (menuClass == \"selected\" || menuClass == \"past\") { ?>\n        <a><?= steps[menuSteps[i].stepId].label ?></a>\n        <? } else { ?>\n        <?= steps[menuSteps[i].stepId].label ?>\n        <? } ?>\n    </li>\n<? } ?>\n</ul>\n"
+  , __lines = "<ul>\r\n<? for (var i in menuSteps) { ?>\r\n    <?\r\n      var menuClass = 'disabled';\r\n      switch (menuSteps[i].state) {\r\n        case 'past':\r\n          menuClass = 'past';\r\n          break;\r\n        case 'current':\r\n          menuClass = 'selected';\r\n          break;\r\n      }\r\n    ?>\r\n    <li class=\"<?= menuClass ?>\">\r\n        <? if (menuClass == \"selected\" || menuClass == \"past\") { ?>\r\n        <a><?= steps[menuSteps[i].stepId].label ?></a>\r\n        <? } else { ?>\r\n        <?= steps[menuSteps[i].stepId].label ?>\r\n        <? } ?>\r\n    </li>\r\n<? } ?>\r\n</ul>\r\n"
   , __filename = "src/all/data/ejs/setup/menu.ejs";
 try {
   var __output = "";
   function __append(s) { if (s !== undefined && s !== null) __output += s }
   with (locals || {}) {
-    ; __append("<ul>\n")
+    ; __append("<ul>\r\n")
     ; __line = 2
     ;  for (var i in menuSteps) { 
-    ; __append("\n    ")
+    ; __append("\r\n    ")
     ; __line = 3
     ; 
       var menuClass = 'disabled';
@@ -65,28 +65,28 @@ try {
       }
     
     ; __line = 13
-    ; __append("\n    <li class=\"")
+    ; __append("\r\n    <li class=\"")
     ; __line = 14
     ; __append(escapeFn( menuClass ))
-    ; __append("\">\n        ")
+    ; __append("\">\r\n        ")
     ; __line = 15
     ;  if (menuClass == "selected" || menuClass == "past") { 
-    ; __append("\n        <a>")
+    ; __append("\r\n        <a>")
     ; __line = 16
     ; __append(escapeFn( steps[menuSteps[i].stepId].label ))
-    ; __append("</a>\n        ")
+    ; __append("</a>\r\n        ")
     ; __line = 17
     ;  } else { 
-    ; __append("\n        ")
+    ; __append("\r\n        ")
     ; __line = 18
     ; __append(escapeFn( steps[menuSteps[i].stepId].label ))
-    ; __append("\n        ")
+    ; __append("\r\n        ")
     ; __line = 19
     ;  } 
-    ; __append("\n    </li>\n")
+    ; __append("\r\n    </li>\r\n")
     ; __line = 21
     ;  } 
-    ; __append("\n</ul>\n")
+    ; __append("\r\n</ul>\r\n")
     ; __line = 23
   }
   return __output;

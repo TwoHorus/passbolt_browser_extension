@@ -42,16 +42,16 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<div class=\"feedback\">\n    <i class=\"fa fa-cog fa-spin huge\"></i>\n    <p><?= message ?><br> please wait...</p>\n</div>"
+  , __lines = "<div class=\"feedback\">\r\n    <i class=\"fa fa-cog fa-spin huge\"></i>\r\n    <p><?= message ?><br> please wait...</p>\r\n</div>"
   , __filename = "src/all/data/ejs/login/feedbackPassphraseOk.ejs";
 try {
   var __output = "";
   function __append(s) { if (s !== undefined && s !== null) __output += s }
   with (locals || {}) {
-    ; __append("<div class=\"feedback\">\n    <i class=\"fa fa-cog fa-spin huge\"></i>\n    <p>")
+    ; __append("<div class=\"feedback\">\r\n    <i class=\"fa fa-cog fa-spin huge\"></i>\r\n    <p>")
     ; __line = 3
     ; __append(escapeFn( message ))
-    ; __append("<br> please wait...</p>\n</div>")
+    ; __append("<br> please wait...</p>\r\n</div>")
     ; __line = 4
   }
   return __output;

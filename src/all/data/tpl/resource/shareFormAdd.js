@@ -42,13 +42,13 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<div class=\"input text autocomplete\">\n    <label for=\"js-search-aros-input\">Share with people or groups</label>\n    <input maxlength=\"255\" id=\"js-search-aros-input\" placeholder=\"enter one name or email\" autocomplete=\"off\" type=\"text\">\n    <div class=\"security-token\"></div>\n</div>\n<div id=\"js-search-aro-autocomplete\" class=\"autocomplete-wrapper hidden\">\n    <div class=\"autocomplete-content scroll\"></div>\n</div>\n"
+  , __lines = "<div class=\"input text autocomplete\">\r\n    <label for=\"js-search-aros-input\">Share with people or groups</label>\r\n    <input maxlength=\"255\" id=\"js-search-aros-input\" placeholder=\"enter one name or email\" autocomplete=\"off\" type=\"text\">\r\n    <div class=\"security-token\"></div>\r\n</div>\r\n<div id=\"js-search-aro-autocomplete\" class=\"autocomplete-wrapper hidden\">\r\n    <div class=\"autocomplete-content scroll\"></div>\r\n</div>\r\n"
   , __filename = "src/all/data/ejs/resource/shareFormAdd.ejs";
 try {
   var __output = "";
   function __append(s) { if (s !== undefined && s !== null) __output += s }
   with (locals || {}) {
-    ; __append("<div class=\"input text autocomplete\">\n    <label for=\"js-search-aros-input\">Share with people or groups</label>\n    <input maxlength=\"255\" id=\"js-search-aros-input\" placeholder=\"enter one name or email\" autocomplete=\"off\" type=\"text\">\n    <div class=\"security-token\"></div>\n</div>\n<div id=\"js-search-aro-autocomplete\" class=\"autocomplete-wrapper hidden\">\n    <div class=\"autocomplete-content scroll\"></div>\n</div>\n")
+    ; __append("<div class=\"input text autocomplete\">\r\n    <label for=\"js-search-aros-input\">Share with people or groups</label>\r\n    <input maxlength=\"255\" id=\"js-search-aros-input\" placeholder=\"enter one name or email\" autocomplete=\"off\" type=\"text\">\r\n    <div class=\"security-token\"></div>\r\n</div>\r\n<div id=\"js-search-aro-autocomplete\" class=\"autocomplete-wrapper hidden\">\r\n    <div class=\"autocomplete-content scroll\"></div>\r\n</div>\r\n")
     ; __line = 9
   }
   return __output;

@@ -42,19 +42,19 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<div class=\"feedback\">\n    <i class=\"fa fa-meh-o huge\" ></i>\n    <p>The supplied account does not exist</p>\n</div>\n<div class=\"actions-wrapper center\">\n    <a class=\"button primary big\" href=\"<?= passboltDomain ?>/register\">register again</a><br><br>\n    <a href=\"<?= passboltDomain ?>/recover\">or recover an existing account</a>\n</div>\n"
+  , __lines = "<div class=\"feedback\">\r\n    <i class=\"fa fa-meh-o huge\" ></i>\r\n    <p>The supplied account does not exist</p>\r\n</div>\r\n<div class=\"actions-wrapper center\">\r\n    <a class=\"button primary big\" href=\"<?= passboltDomain ?>/register\">register again</a><br><br>\r\n    <a href=\"<?= passboltDomain ?>/recover\">or recover an existing account</a>\r\n</div>\r\n"
   , __filename = "src/all/data/ejs/login/feedbackLoginNoUser.ejs";
 try {
   var __output = "";
   function __append(s) { if (s !== undefined && s !== null) __output += s }
   with (locals || {}) {
-    ; __append("<div class=\"feedback\">\n    <i class=\"fa fa-meh-o huge\" ></i>\n    <p>The supplied account does not exist</p>\n</div>\n<div class=\"actions-wrapper center\">\n    <a class=\"button primary big\" href=\"")
+    ; __append("<div class=\"feedback\">\r\n    <i class=\"fa fa-meh-o huge\" ></i>\r\n    <p>The supplied account does not exist</p>\r\n</div>\r\n<div class=\"actions-wrapper center\">\r\n    <a class=\"button primary big\" href=\"")
     ; __line = 6
     ; __append(escapeFn( passboltDomain ))
-    ; __append("/register\">register again</a><br><br>\n    <a href=\"")
+    ; __append("/register\">register again</a><br><br>\r\n    <a href=\"")
     ; __line = 7
     ; __append(escapeFn( passboltDomain ))
-    ; __append("/recover\">or recover an existing account</a>\n</div>\n")
+    ; __append("/recover\">or recover an existing account</a>\r\n</div>\r\n")
     ; __line = 9
   }
   return __output;

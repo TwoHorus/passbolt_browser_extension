@@ -42,13 +42,13 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<!-- left collumn -->\n<div class=\"col7\">\n    <h3>Setup is complete</h3>\n    <div class=\"message success\">\n        <strong>\n            <i class=\"fa fa-check-circle\"></i>\n            Success!\n        </strong>\n        You have successfully completed the setup, thank you!\n        You will soon be redirected to the login page.\n    </div>\n    <div class=\"input-wrapper\">\n        <a id=\"js_spinner\" class=\"button primary next big processing\">login!</a>\n        <a>Click here if you can't wait</a>.\n    </div>\n    <p>\n    </p>\n</div>\n\n<!-- right collumn -->\n<div class=\"col4 last\">\n\n</div>\n"
+  , __lines = "<!-- left collumn -->\r\n<div class=\"col7\">\r\n    <h3>Setup is complete</h3>\r\n    <div class=\"message success\">\r\n        <strong>\r\n            <i class=\"fa fa-check-circle\"></i>\r\n            Success!\r\n        </strong>\r\n        You have successfully completed the setup, thank you!\r\n        You will soon be redirected to the login page.\r\n    </div>\r\n    <div class=\"input-wrapper\">\r\n        <a id=\"js_spinner\" class=\"button primary next big processing\">login!</a>\r\n        <a>Click here if you can't wait</a>.\r\n    </div>\r\n    <p>\r\n    </p>\r\n</div>\r\n\r\n<!-- right collumn -->\r\n<div class=\"col4 last\">\r\n\r\n</div>\r\n"
   , __filename = "src/all/data/ejs/setup/login_redirection.ejs";
 try {
   var __output = "";
   function __append(s) { if (s !== undefined && s !== null) __output += s }
   with (locals || {}) {
-    ; __append("<!-- left collumn -->\n<div class=\"col7\">\n    <h3>Setup is complete</h3>\n    <div class=\"message success\">\n        <strong>\n            <i class=\"fa fa-check-circle\"></i>\n            Success!\n        </strong>\n        You have successfully completed the setup, thank you!\n        You will soon be redirected to the login page.\n    </div>\n    <div class=\"input-wrapper\">\n        <a id=\"js_spinner\" class=\"button primary next big processing\">login!</a>\n        <a>Click here if you can't wait</a>.\n    </div>\n    <p>\n    </p>\n</div>\n\n<!-- right collumn -->\n<div class=\"col4 last\">\n\n</div>\n")
+    ; __append("<!-- left collumn -->\r\n<div class=\"col7\">\r\n    <h3>Setup is complete</h3>\r\n    <div class=\"message success\">\r\n        <strong>\r\n            <i class=\"fa fa-check-circle\"></i>\r\n            Success!\r\n        </strong>\r\n        You have successfully completed the setup, thank you!\r\n        You will soon be redirected to the login page.\r\n    </div>\r\n    <div class=\"input-wrapper\">\r\n        <a id=\"js_spinner\" class=\"button primary next big processing\">login!</a>\r\n        <a>Click here if you can't wait</a>.\r\n    </div>\r\n    <p>\r\n    </p>\r\n</div>\r\n\r\n<!-- right collumn -->\r\n<div class=\"col4 last\">\r\n\r\n</div>\r\n")
     ; __line = 24
   }
   return __output;

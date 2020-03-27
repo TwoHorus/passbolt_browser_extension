@@ -42,7 +42,7 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<?\nif (Object.keys(criterias).length == 0) {\n?>\n<li>It is at least 8 char in length </li>\n<li>It contains lower and uppercase character</li>\n<li>It contains letters and numbers</li>\n<li>It contains special characters (like / or * or %)</li>\n<li>It is not part of a dictionary</li>\n<? } else { ?>\n<li class=\"<?= criterias.minLength ? 'success' : 'error' ?>\">It is at least 8 char in length</li>\n<li class=\"<?= criterias.alpha && criterias.uppercase ? 'success' : 'error' ?>\">It contains lower and uppercase character</li>\n<li class=\"<?= (criterias.alpha || criterias.uppercase) && criterias.digit ? 'success' : 'error' ?>\">It contains letters and numbers</li>\n<li class=\"<?= criterias.special ? 'success' : 'error' ?>\">It contains special characters (like / or * or %)</li>\n<? if (typeof criterias.dictionary !== 'undefined') { ?>\n<li class=\"<?= criterias.dictionary ? 'success' : 'error' ?>\">It is not part of a dictionary\n    <? if (typeof criterias.dictionary_error !== 'undefined') { ?>(network error)<? } ?>\n</li>\n<? } else { ?>\n<li>It is not part of a dictionary (checking, please wait...)</li>\n<? } ?>\n<? } ?>\n"
+  , __lines = "<?\r\nif (Object.keys(criterias).length == 0) {\r\n?>\r\n<li>It is at least 8 char in length </li>\r\n<li>It contains lower and uppercase character</li>\r\n<li>It contains letters and numbers</li>\r\n<li>It contains special characters (like / or * or %)</li>\r\n<li>It is not part of a dictionary</li>\r\n<? } else { ?>\r\n<li class=\"<?= criterias.minLength ? 'success' : 'error' ?>\">It is at least 8 char in length</li>\r\n<li class=\"<?= criterias.alpha && criterias.uppercase ? 'success' : 'error' ?>\">It contains lower and uppercase character</li>\r\n<li class=\"<?= (criterias.alpha || criterias.uppercase) && criterias.digit ? 'success' : 'error' ?>\">It contains letters and numbers</li>\r\n<li class=\"<?= criterias.special ? 'success' : 'error' ?>\">It contains special characters (like / or * or %)</li>\r\n<? if (typeof criterias.dictionary !== 'undefined') { ?>\r\n<li class=\"<?= criterias.dictionary ? 'success' : 'error' ?>\">It is not part of a dictionary\r\n    <? if (typeof criterias.dictionary_error !== 'undefined') { ?>(network error)<? } ?>\r\n</li>\r\n<? } else { ?>\r\n<li>It is not part of a dictionary (checking, please wait...)</li>\r\n<? } ?>\r\n<? } ?>\r\n"
   , __filename = "src/all/data/ejs/secret/criterias.ejs";
 try {
   var __output = "";
@@ -52,42 +52,42 @@ try {
 if (Object.keys(criterias).length == 0) {
 
     ; __line = 3
-    ; __append("\n<li>It is at least 8 char in length </li>\n<li>It contains lower and uppercase character</li>\n<li>It contains letters and numbers</li>\n<li>It contains special characters (like / or * or %)</li>\n<li>It is not part of a dictionary</li>\n")
+    ; __append("\r\n<li>It is at least 8 char in length </li>\r\n<li>It contains lower and uppercase character</li>\r\n<li>It contains letters and numbers</li>\r\n<li>It contains special characters (like / or * or %)</li>\r\n<li>It is not part of a dictionary</li>\r\n")
     ; __line = 9
     ;  } else { 
-    ; __append("\n<li class=\"")
+    ; __append("\r\n<li class=\"")
     ; __line = 10
     ; __append(escapeFn( criterias.minLength ? 'success' : 'error' ))
-    ; __append("\">It is at least 8 char in length</li>\n<li class=\"")
+    ; __append("\">It is at least 8 char in length</li>\r\n<li class=\"")
     ; __line = 11
     ; __append(escapeFn( criterias.alpha && criterias.uppercase ? 'success' : 'error' ))
-    ; __append("\">It contains lower and uppercase character</li>\n<li class=\"")
+    ; __append("\">It contains lower and uppercase character</li>\r\n<li class=\"")
     ; __line = 12
     ; __append(escapeFn( (criterias.alpha || criterias.uppercase) && criterias.digit ? 'success' : 'error' ))
-    ; __append("\">It contains letters and numbers</li>\n<li class=\"")
+    ; __append("\">It contains letters and numbers</li>\r\n<li class=\"")
     ; __line = 13
     ; __append(escapeFn( criterias.special ? 'success' : 'error' ))
-    ; __append("\">It contains special characters (like / or * or %)</li>\n")
+    ; __append("\">It contains special characters (like / or * or %)</li>\r\n")
     ; __line = 14
     ;  if (typeof criterias.dictionary !== 'undefined') { 
-    ; __append("\n<li class=\"")
+    ; __append("\r\n<li class=\"")
     ; __line = 15
     ; __append(escapeFn( criterias.dictionary ? 'success' : 'error' ))
-    ; __append("\">It is not part of a dictionary\n    ")
+    ; __append("\">It is not part of a dictionary\r\n    ")
     ; __line = 16
     ;  if (typeof criterias.dictionary_error !== 'undefined') { 
     ; __append("(network error)")
     ;  } 
-    ; __append("\n</li>\n")
+    ; __append("\r\n</li>\r\n")
     ; __line = 18
     ;  } else { 
-    ; __append("\n<li>It is not part of a dictionary (checking, please wait...)</li>\n")
+    ; __append("\r\n<li>It is not part of a dictionary (checking, please wait...)</li>\r\n")
     ; __line = 20
     ;  } 
-    ; __append("\n")
+    ; __append("\r\n")
     ; __line = 21
     ;  } 
-    ; __append("\n")
+    ; __append("\r\n")
     ; __line = 22
   }
   return __output;

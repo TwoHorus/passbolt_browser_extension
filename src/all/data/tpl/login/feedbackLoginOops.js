@@ -42,13 +42,13 @@ function encode_char(c) {
 };
 ;
 var __line = 1
-  , __lines = "<div class=\"feedback\">\n    <i class=\"fa fa-cog fa-warning huge\"></i>\n    <p>Oops, something went wrong</p>\n</div>\n<div class=\"actions-wrapper center\">\n    <a class=\"button primary big\" href=\"/auth/login\">Retry</a>\n</div>\n"
+  , __lines = "<div class=\"feedback\">\r\n    <i class=\"fa fa-cog fa-warning huge\"></i>\r\n    <p>Oops, something went wrong</p>\r\n</div>\r\n<div class=\"actions-wrapper center\">\r\n    <a class=\"button primary big\" href=\"/auth/login\">Retry</a>\r\n</div>\r\n"
   , __filename = "src/all/data/ejs/login/feedbackLoginOops.ejs";
 try {
   var __output = "";
   function __append(s) { if (s !== undefined && s !== null) __output += s }
   with (locals || {}) {
-    ; __append("<div class=\"feedback\">\n    <i class=\"fa fa-cog fa-warning huge\"></i>\n    <p>Oops, something went wrong</p>\n</div>\n<div class=\"actions-wrapper center\">\n    <a class=\"button primary big\" href=\"/auth/login\">Retry</a>\n</div>\n")
+    ; __append("<div class=\"feedback\">\r\n    <i class=\"fa fa-cog fa-warning huge\"></i>\r\n    <p>Oops, something went wrong</p>\r\n</div>\r\n<div class=\"actions-wrapper center\">\r\n    <a class=\"button primary big\" href=\"/auth/login\">Retry</a>\r\n</div>\r\n")
     ; __line = 8
   }
   return __output;
